@@ -384,12 +384,8 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-# VS Code files for those working on multiple tools
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# VS Code files
+.vscode/
 *.code-workspace
 
 # Local History for Visual Studio Code
@@ -404,3 +400,101 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# =============================================================================
+# C++ / CMake
+# =============================================================================
+
+# Build directories
+build/
+cmake-build-*/
+out/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CMakeScripts/
+*.cmake
+!CMakeLists.txt
+
+# Compiled Object files
+*.o
+*.obj
+*.ko
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+
+# Clang
+.clangd/
+compile_commands.json
+
+# Conan (C++ package manager)
+conan/
+conanbuildinfo.*
+conaninfo.txt
+graph_info.json
+
+# vcpkg
+vcpkg_installed/
+
+# Ninja
+.ninja_deps
+.ninja_log
+
+# CLion
+cmake-build-debug/
+cmake-build-release/
+
+# =============================================================================
+# Java / Gradle (for java folder)
+# =============================================================================
+
+# Gradle
+.gradle/
+**/build/
+!src/**/build/
+
+# Gradle Wrapper
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
