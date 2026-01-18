@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLoaders.a CMakeFiles/Loaders.dir/Loaders/BondTradeLoader.cpp.o CMakeFiles/Loaders.dir/Loaders/FxTradeLoader.cpp.o
+/usr/bin/ranlib libLoaders.a

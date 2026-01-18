@@ -1,0 +1,2 @@
+/usr/bin/ar qc libRiskSystem.a CMakeFiles/RiskSystem.dir/RiskSystem/PricingConfigLoader.cpp.o CMakeFiles/RiskSystem.dir/RiskSystem/SerialPricer.cpp.o CMakeFiles/RiskSystem.dir/RiskSystem/SerialTradeLoader.cpp.o CMakeFiles/RiskSystem.dir/RiskSystem/StreamingTradeLoader.cpp.o CMakeFiles/RiskSystem.dir/RiskSystem/ParallelPricer.cpp.o CMakeFiles/RiskSystem.dir/RiskSystem/ScreenResultPrinter.cpp.o
+/usr/bin/ranlib libRiskSystem.a

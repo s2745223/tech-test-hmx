@@ -1,0 +1,2 @@
+/usr/bin/ar qc libModels.a CMakeFiles/Models.dir/Models/ScalarResults.cpp.o
+/usr/bin/ranlib libModels.a
