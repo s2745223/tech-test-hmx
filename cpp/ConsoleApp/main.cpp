@@ -32,12 +32,20 @@ int main(int argc, char* argv[]) {
     auto allTrades = tradeLoader.loadTrades();
     
     ScalarResults results;
-    SerialPricer pricer;
-    pricer.price(allTrades, &results);
     
+    
+    //SerialPricer pricer;
+    //pricer.price(allTrades, &results);
+    
+    //StreamingTradeLoader streamTradeLoader;
+    //streamTradeLoader.loadAndPrice(&results);
+
+    ParallelPricer parallelPricer;
+    parallelPricer.price(allTrades, &results);
+
     ScreenResultPrinter screenPrinter;
     screenPrinter.printResults(results);
-    
+
     std::cout << "Press any key to exit.." << std::endl;
     _getch();
     

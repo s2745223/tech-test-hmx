@@ -1,0 +1,1 @@
+/usr/bin/clang++ -O1 -g -fsanitize=address -fno-omit-frame-pointer -O2 -g -DNDEBUG -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -fsanitize=address CMakeFiles/ConsoleApp.dir/ConsoleApp/main.cpp.o -o ConsoleApp  libModels.a libLoaders.a libPricers.a libRiskSystem.a libLoaders.a libPricers.a libModels.a

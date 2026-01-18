@@ -9,7 +9,7 @@ public:
     static constexpr const char* GovBondTradeType = "GovBond";
     static constexpr const char* CorpBondTradeType = "CorpBond";
     
-    BondTrade(const std::string& tradeId, const std::string& tradeType = GovBondTradeType) 
+    BondTrade(const std::string& tradeId, const std::string& tradeType) 
         : tradeType_(tradeType) {
         if (tradeId.empty()) {
             throw std::invalid_argument("A valid non null, non empty trade ID must be provided");

@@ -30,10 +30,26 @@ public:
 
         Iterator() = default;
 
-        // Iterator must be constructable from ScalarResults parent
+        explicit Iterator(const ScalarResults* parent, bool isEnd = false);
+
         Iterator& operator++();
         ScalarResult operator*() const;
         bool operator!=(const Iterator& other) const;
+
+
+    private:
+        void advanceToNext();  // sets currentKey_ and advances internal iterators
+
+        const ScalarResults* parent_ = nullptr;
+
+        std::map<std::string, double>::const_iterator resIt_{};
+        std::map<std::string, double>::const_iterator resEnd_{};
+
+        std::map<std::string, std::string>::const_iterator errIt_{};
+        std::map<std::string, std::string>::const_iterator errEnd_{};
+
+        std::string currentKey_{};
+        bool atEnd_ = true;
     };
 
     Iterator begin() const;
